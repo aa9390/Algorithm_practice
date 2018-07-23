@@ -58,3 +58,22 @@ int main(void) {
  // 결과 출력
   printf("%d", numArray[1] * numArray[2]);
 }
+
+
+
+
+// c++을 이용한 다른 방법. 
+// c에는 stl없음...
+// #include <stdio.h>
+// #include <algorithm>
+// using namespace std;
+
+// int a[4];
+// int main() {
+//  for(int i=0; i<4; i++) {
+//   scanf("%d",&a[i]);
+//  }
+  
+//  sort(a,a+4);
+//  printf("%d", a[0]*a[2]);
+// }
