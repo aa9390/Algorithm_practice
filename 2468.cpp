@@ -26,7 +26,7 @@ void init() {
 }
 
 // 0인곳 탐색
-void bfs(int x, int y) {
+void dfs(int x, int y) {
   visited[x][y] = 1;
 
   for(int i=0; i<4; i++) {
@@ -35,7 +35,7 @@ void bfs(int x, int y) {
 
     if(newX >= 0 && newY >= 0 && newX < N && newY < N) {
       if(visited[newX][newY] == 0 && check[newX][newY] == 0) {
-        bfs(newX, newY);
+        dfs(newX, newY);
       }
     }
   }
