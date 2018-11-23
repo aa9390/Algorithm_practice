@@ -12,7 +12,7 @@ public:
 	    string result;
 	    int mul = 1;
 	    
-	    // 함수의 인자를 2진수로 변환
+	    // 함수의 인자를 2진수로 보고, 10진수로 변환
 	    while (number > 0){
 		    if (number % 2)
 			    value += mul;
@@ -22,6 +22,7 @@ public:
 	    
 	    char temp[8];
 	    
+	    // 16진수로 변환하여 
 	    if(value < 16) {
 	        sprintf(temp, "0%X", value);
 	    }
